@@ -1,0 +1,12 @@
+.checkout-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media(max-width: 768px) {
+    .checkout-page {
+        display: flex;
+        flex-direction: column;
+    }
+}

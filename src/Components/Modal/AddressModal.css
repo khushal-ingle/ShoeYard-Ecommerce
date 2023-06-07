@@ -1,0 +1,68 @@
+.modal-wrapper {
+    background: #342e2ebf;
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    z-index: 8888;
+}
+
+.modal {
+    padding: 1rem 2rem;
+    background-color: white;
+    width: 35rem;
+    position: relative;
+    margin: auto;
+    top: 20rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addressModal{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.name-field{
+    display: flex;
+    justify-content: space-around;
+}
+
+.address-field {
+    display: flex;
+    justify-content: space-around;
+}
+.pincode-field {
+    display: flex;
+    justify-content: space-around;
+}
+.country-field {
+    display: flex;
+    justify-content: space-around;
+}
+.phone-field {
+    display: flex;
+    justify-content: space-around;
+}
+
+.add-btn{
+    margin: 1rem;
+    width: -webkit-fill-available;
+}
+
+.add-btn:hover {
+    opacity: 0.8;
+}
+
+.fa-times {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.addressModal input{
+    width: 25rem;
+}

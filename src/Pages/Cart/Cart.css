@@ -1,0 +1,164 @@
+.cart-page{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 0.1rem;
+}
+.cartCard {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    padding: 1rem;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.cartCard img {
+    width: 150px;
+    height: 200px;
+}
+
+.cartCard .productDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartCard .productDescription .productName {
+    font-weight: bold;
+}
+
+.cartCard .productDescription .productPrice {
+    font-weight: bold;
+}
+
+.cartCard .productDescription .productAuthor {
+    font-weight: light;
+    color: rgb(167, 162, 162);
+}
+
+.cartCard .productDescription .originalPrice {
+    font-weight: light;
+    color: rgb(167, 162, 162);
+    text-decoration: line-through;
+}
+
+.cartCard .btn-moveToWishlist {
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #007bb5;
+    color: white;
+    max-width: 100%;
+}
+
+.cartCard .btn-remove {
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #007bb5;
+    color: white;
+    max-width: 100%;
+}
+
+.btn-moveToWishlist:hover {
+    cursor: pointer;
+}
+
+.btn-remove:hover {
+    cursor: pointer;
+}
+
+.discount{
+    color: #20aa20;
+}
+
+.total-price-card{
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    padding: 1rem;
+    position: relative;
+    height: fit-content;  
+    margin-bottom: 32px;  
+}
+
+.coupon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apply-coupon{
+    padding: 0.5rem;
+    height: 4vh;
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.cart-price-details ul {
+    padding: 0;
+}
+
+.cart-price-details ul li{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2px;;
+}
+
+.total-amount{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: -1rem;
+}
+
+.discount-statement{
+    margin: 1rem
+}
+
+.btn-checkout{
+    position: relative;
+    width: 300px;
+    padding: 0.5rem;
+    background-color: #007bb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.discount-statement,
+.coupon-msg {
+    color: rgb(18, 173, 18);
+}
+
+.coupon-msg p {
+    display: flex;;
+    gap: 0.5rem
+}
+
+.coupon-msg img {
+    width: 17px;
+    margin-top: -6px;
+}
+
+.remove-coupon {
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .cart-page{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .total-price-card{
+        margin: auto;
+    }
+}

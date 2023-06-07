@@ -1,0 +1,40 @@
+.login-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    height: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    margin: auto;
+}
+
+.userEmail {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.userPassword {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.login-card input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    margin-left: 0.05rem;
+}
+
+.login-card button {
+    padding: 0.5rem;
+    width: 100%;
+    margin: auto;
+    background-color: #007bb5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}

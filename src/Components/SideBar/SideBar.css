@@ -1,0 +1,70 @@
+.Filters{
+    border-right: 1px solid black;
+    height: 100%;
+    margin: 2rem;
+    position: relative;
+    top: -45px;
+    padding: 2rem;
+    width: 150px;
+    text-align: left;
+}
+
+.filter-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-header button{
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.filter-categories{
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-ratings{
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-sorting{
+    display: flex;
+    flex-direction: column;
+}
+
+datalist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    writing-mode: horizontal-lr;
+    width: 150px;
+}
+
+option {
+    padding: 0;
+}
+
+input[type="range"] {
+    width: 150px;
+    margin: 0;
+}
+
+.priceRangeValues{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    padding: 0.05rem;
+}
+
+.btn-clear {
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+    .Filters{
+        width: 200px;
+    }
+}
